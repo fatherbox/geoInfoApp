@@ -1,0 +1,18 @@
+<div class="row">
+<table class="table">
+    <tr><th>Name</th><th>Country Code</th><th>Capital</th><th>Area in km2</th><th>Population</th><th>Continent</th></tr>
+    <tbody>
+ <tr ng-repeat="ct in countriesList" class="countryRow" ng-click="gotoCountryInfo(ct.countryName)">
+
+     <td>{{ct.countryName}}</td>
+     <td>{{ct.countryCode}}</td>
+     <td>{{ct.capital}}</td>
+     <td>{{ct.areaInSqKm | number}}</td>
+     <td>{{ct.population | number}}</td>
+     <td>{{ct.continent}}</td>
+     </a>
+ </tr>
+    </tbody>
+</table>
+<a href="#/"><div class="col-md-2 col-md-offset-5 btn btn-primary">Home</div></a>
+</div>
